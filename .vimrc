@@ -17,6 +17,7 @@ Plugin 'taglist.vim'
 call vundle#end()            " required
 filetype plugin indent on    " required
 map <C-n> :NERDTreeToggle<CR>
+map <C-l> :TlistToggle<CR>
 colorscheme elflord
 set number
 set hlsearch
