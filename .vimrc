@@ -14,6 +14,8 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'vim-scripts/Conque-GDB'
 Plugin 'taglist.vim'
+Plugin 'bfredl/nvim-ipy'
+Plugin 'tell-k/vim-autopep8'
 call vundle#end()            " required
 filetype plugin indent on    " required
 map <C-n> :NERDTreeToggle<CR>
@@ -25,4 +27,5 @@ set hlsearch
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 map <F4> :execute "vimgrep /" . expand("<cword>") . "/j **" <Bar> cw<CR>
+map <F5> :.w !bash <CR>
 let Tlist_WinWidth = 40
