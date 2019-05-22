@@ -33,8 +33,8 @@ set laststatus=2
 set t_Co=256
 
 "Gruv
-let g:gruvbox_contrast_dark = 'medium'
-let g:gruvbox_contrast_light = 'soft'
+let g:gruvbox_contrast_dark = 'hard'
+"let g:gruvbox_contrast_light = 'soft'
 let g:gruvbox_termcolors=256
 set background=dark
 colorscheme gruvbox
@@ -59,18 +59,10 @@ let Tlist_WinWidth = 50
 
 
 "gtags
-if has("gtags-cscope")
+map <C-\> :cs find 3 <C-R>=expand("<cword>")<CR><CR>
+if filereadable("GTAGS")
 	set cscopetag
 	set csprg=gtags-cscope                                             
 	cs add GTAGS
-	"set csto=0
-	"set cst
-	"set nocsverb
-	" add any database in current directory
-	if filereadable("GTAGS")
-		cs add GTAGS
-		" else add database pointed to by environment
-	endif
-	"set csverb
 endif
 
