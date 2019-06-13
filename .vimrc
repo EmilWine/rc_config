@@ -48,7 +48,7 @@ let g:ycm_autoclose_preview_window_after_completion=1
 "let g:ycm_autoclose_preview_window_after_insertion = 1
 
 map <C-n> :NERDTreeToggle<CR>
-let NERDTreeWinSize = 30
+let NERDTreeWinSize = 40
 
 map <C-l> :TlistToggle<CR>
 let g:ctrlp_map = '<c-p>'
@@ -56,6 +56,10 @@ let g:ctrlp_cmd = 'CtrlP'
 map <F4> :execute "vimgrep /" . expand("<cword>") . "/j **/*.cpp **/*.cc **/*.h **/*.py **/*.cs **/*.c" <Bar> cw<CR>
 map <F5> :.w !bash <CR>
 let Tlist_WinWidth = 50
+let Tlist_Use_Right_Window = 1
+
+"Buffesr shortcut
+nnoremap gb :ls<CR>:b<Space>
 
 
 "gtags
