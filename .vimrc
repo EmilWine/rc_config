@@ -48,7 +48,8 @@ let g:ycm_autoclose_preview_window_after_completion=1
 "let g:ycm_autoclose_preview_window_after_insertion = 1
 
 map <C-n> :NERDTreeToggle<CR>
-let NERDTreeWinSize = 40
+map <C-b> :NERDTreeFind<CR>
+let NERDTreeWinSize = 50
 
 map <C-l> :TlistToggle<CR>
 let g:ctrlp_map = '<c-p>'
