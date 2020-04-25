@@ -26,6 +26,7 @@ filetype plugin indent on    " required
 set number
 set hlsearch
 set showmatch
+set nowrap
 
 "Power line stuff
 set rtp+=~/.local/lib/python3.6/site-packages/powerline_status-2.7.dev9999_git.b_5d82d544f3366a214732aeb8f781d50ced38ceef_-py3.6.egg/powerline/bindings/vim/
